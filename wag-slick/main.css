@@ -1,0 +1,47 @@
+.home_image {
+  min-height: calc(100vh - 113px);
+  display: flex;
+  align-items: center;
+}
+
+#homeSlider {
+  position: relative;
+  z-index: 1;
+}
+
+button.right-arrow.slick-arrow {
+    right: 0;
+}
+
+button.left-arrow.slick-arrow {
+    left: 0;
+}
+
+button.right-arrow.slick-arrow,
+button.left-arrow.slick-arrow,
+button.right-arrow.slick-arrow:focus,
+button.left-arrow.slick-arrow:focus {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: opacity 0.25s ease-in;
+    -moz-transition: opacity 0.25s ease-in;
+    transition: opacity 0.25s ease-in;
+    will-change: opacity;
+    padding: 0.8rem 1rem;
+    color: #fff;
+    background: transparent;
+    border: 1px solid #fff;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    outline: none;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+    filter: alpha(opacity=75);
+    -moz-opacity: 0.75;
+    -khtml-opacity: 0.75;
+    opacity: 0.75;
+}

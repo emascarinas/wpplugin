@@ -1,0 +1,442 @@
+[
+    {
+        "key": "group_5b8dbf94c754b",
+        "title": "Hero Banner",
+        "fields": [
+            {
+                "key": "field_5b7ce2c881ace",
+                "label": "",
+                "name": "slideRepeater",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "",
+                "min": 0,
+                "max": 0,
+                "layout": "row",
+                "button_label": "Add Banner Image",
+                "sub_fields": [
+                    {
+                        "key": "field_5b7ce2c88a365",
+                        "label": "Image:",
+                        "name": "slide_image",
+                        "type": "image",
+                        "instructions": "For ideal results, use image sized to 1366 px W × 562 px H.",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "array",
+                        "preview_size": "thumbnail",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "key": "field_5b7ce2c88a3fe",
+                        "label": "Headline:",
+                        "name": "carousel_headline",
+                        "type": "wysiwyg",
+                        "instructions": "For larger text, please use 'Heading 1'.  For smaller text, please use 'Heading 2'.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "tabs": "all",
+                        "toolbar": "full",
+                        "media_upload": 1,
+                        "delay": 0
+                    },
+                    {
+                        "key": "field_5b7ce2c88a47e",
+                        "label": "Image positioning:",
+                        "name": "image_positioning",
+                        "type": "text",
+                        "instructions": "Options: center center, left center, right center, right bottom, bottom center, top right, etc.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "center center",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5b7ce2c88a4fb",
+                        "label": "Do you want to include a button?",
+                        "name": "yesbutton",
+                        "type": "true_false",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "message": "",
+                        "default_value": 0,
+                        "ui": 1,
+                        "ui_on_text": "Yes!",
+                        "ui_off_text": "No"
+                    },
+                    {
+                        "key": "field_5b7ce2c88a587",
+                        "label": "Button text:",
+                        "name": "buttontexty",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_5b7ce2c88a4fb",
+                                    "operator": "==",
+                                    "value": "1"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5b7ce2c88a627",
+                        "label": "Button URL:",
+                        "name": "urltexty",
+                        "type": "url",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_5b7ce2c88a4fb",
+                                    "operator": "==",
+                                    "value": "1"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": ""
+                    },
+                    {
+                        "key": "field_5c573de6ed372",
+                        "label": "Should button link open in a new browser tab?",
+                        "name": "buttonTarget",
+                        "type": "true_false",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "message": "",
+                        "default_value": 0,
+                        "ui": 1,
+                        "ui_on_text": "",
+                        "ui_off_text": ""
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "default"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "acf_after_title",
+        "style": "seamless",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    },
+    {
+        "key": "group_5dbb5433b9bd8",
+        "title": "Hero Banner Complete",
+        "fields": [
+            {
+                "key": "field_5dbb5433bf666",
+                "label": "Hero\/Banner Image (click here to edit)",
+                "name": "",
+                "type": "accordion",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "open": 1,
+                "multi_expand": 0,
+                "endpoint": 0
+            },
+            {
+                "key": "field_5dbb5433bf6ac",
+                "label": "",
+                "name": "slideRepeater",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "",
+                "min": 0,
+                "max": 0,
+                "layout": "row",
+                "button_label": "Add Banner Image",
+                "sub_fields": [
+                    {
+                        "key": "field_5dbb5433c8bb7",
+                        "label": "Image:",
+                        "name": "slide_image",
+                        "type": "image",
+                        "instructions": "For ideal results, use image sized to 1366 px W × 562 px H.",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "array",
+                        "preview_size": "thumbnail",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "key": "field_5dbb5433c8c00",
+                        "label": "Headline:",
+                        "name": "carousel_headline",
+                        "type": "wysiwyg",
+                        "instructions": "For larger text, please use 'Heading 1'.  For smaller text, please use 'Heading 2'.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "tabs": "all",
+                        "toolbar": "full",
+                        "media_upload": 1,
+                        "delay": 0
+                    },
+                    {
+                        "key": "field_5dbb5433c8c48",
+                        "label": "Image positioning:",
+                        "name": "image_positioning",
+                        "type": "text",
+                        "instructions": "Options: center center, left center, right center, right bottom, bottom center, top right, etc.",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5dbb5433c8c86",
+                        "label": "Do you want to include a button?",
+                        "name": "yesbutton",
+                        "type": "true_false",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "message": "",
+                        "default_value": 0,
+                        "ui": 1,
+                        "ui_on_text": "Yes!",
+                        "ui_off_text": "No"
+                    },
+                    {
+                        "key": "field_5dbb5433c8cc7",
+                        "label": "Button text:",
+                        "name": "buttontexty",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_5dbb5433c8c86",
+                                    "operator": "==",
+                                    "value": "1"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5dbb5433c8d07",
+                        "label": "Button URL:",
+                        "name": "urltexty",
+                        "type": "url",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_5dbb5433c8c86",
+                                    "operator": "==",
+                                    "value": "1"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": ""
+                    },
+                    {
+                        "key": "field_5dbb5433c8d47",
+                        "label": "Should button link open in a new browser tab?",
+                        "name": "buttonTarget",
+                        "type": "true_false",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "message": "",
+                        "default_value": 0,
+                        "ui": 1,
+                        "ui_on_text": "",
+                        "ui_off_text": ""
+                    },
+                    {
+                        "key": "field_5dbb5433c8d86",
+                        "label": "Mobile Image",
+                        "name": "mobile_image",
+                        "type": "image",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "url",
+                        "preview_size": "thumbnail",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "default"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "acf_after_title",
+        "style": "seamless",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "excerpt",
+            "discussion",
+            "comments",
+            "format",
+            "featured_image",
+            "categories",
+            "tags",
+            "send-trackbacks"
+        ],
+        "active": false,
+        "description": ""
+    }
+]
