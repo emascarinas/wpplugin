@@ -1,12 +1,12 @@
 <?php 
 $postID = get_the_ID();
-
+$repeater = $atts['repeater'];
 ?>
-<div id="homeSlider">
+<div class="slickSlider <?=$repeater?>">
 
-	<?php if( have_rows('slideRepeater', $postID) ): ?>
+	<?php if( have_rows($repeater, $postID) ): ?>
 
-		<?php while( have_rows('slideRepeater', $postID) ): the_row(); 
+		<?php while( have_rows($repeater, $postID) ): the_row(); 
 
 					// vars
 			$sliderimage = get_sub_field('slide_image', $postID);

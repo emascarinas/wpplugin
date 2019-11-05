@@ -14,8 +14,9 @@ function wag_shortcodes_init()
 {
 	function wag_shortcode($atts = [], $content = null)
 	{
+		$atts = shortcode_atts( array( 'repeater' => 'slideRepeater' ), $atts );
 		ob_start();
-		require_once ( plugin_dir_path(__FILE__) . '/view.php');
+		require ( plugin_dir_path(__FILE__) . '/view.php');
 		$content = ob_get_clean();
 		return $content;	
 	}

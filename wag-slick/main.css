@@ -4,7 +4,7 @@
   align-items: center;
 }
 
-#homeSlider {
+.slickSlider {
   position: relative;
   z-index: 1;
 }

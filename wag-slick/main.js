@@ -1,6 +1,6 @@
 (function( $ ) {
 
-	$('#homeSlider').slick({
+	$('.slickSlider').slick({
 		arrows: true,
 		autoplay: true,
 		infinite: true,
@@ -20,13 +20,13 @@
 	var $windowOG = $(window).height();
 	var $chosenHeightOG = ($windowOG - $navigationHeightOG);
 	var $windowSize = $(window);
-	$('#homeSlider.slick-slider .slick-track').css('height', $chosenHeightOG);
+	$('.slickSlider.slick-slider .slick-track').css('height', $chosenHeightOG);
 
 
 	function resizeNav() {
         var $navigationHeight = $( '#masthead' ).height();
     	var $chosenHeight = ($(window).height() - $navigationHeight);
-	  		$('#homeSlider.slick-slider .slick-track').css('height', $chosenHeight);
+	  		$('.slickSlider.slick-slider .slick-track').css('height', $chosenHeight);
 	}
 	$windowSize
 		.resize(resizeNav)
