@@ -1,0 +1,93 @@
+/* checkeredboard **********************************************************/
+.wgrid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	max-width: 1700px;
+	margin: 4em auto;
+	padding: 0 2em;
+}
+.wgrid .event-row {
+	padding-bottom: 100px;
+	align-items: center;
+	width: 100%;
+	display: flex;
+}
+.wgrid .event-row.odd {
+	flex-direction: row-reverse;
+}
+.wgrid .event-image {
+	margin-right: 50px;
+	margin-left: 0;
+	flex: 0 1 50%;
+	background-size: cover;
+	position: relative;
+	margin: 0;
+	width: 100%;
+	padding-bottom: 34%;
+	overflow: hidden;
+	display: inline-block;
+	vertical-align: middle;
+	box-sizing: border-box;
+	background-position: 42% 42%;
+}
+.wgrid article {
+	flex: 0 1 50%;
+	background: #fff;
+	display: flex;
+	align-items: center;
+}
+.wgrid .container-text {
+	padding: 0;
+	width: 100%;
+	max-width: 1300px;
+	margin: 0 auto;
+	text-align: left;
+	overflow: auto;
+}
+.wgrid .event-spacer {
+	width: 4em;
+}
+.wgrid .featured-event h4 {
+	padding-bottom: 0;
+	font-size: 19px;
+}
+
+.wgrid .featured-event h4 + p {
+	padding-top: 15px;
+}
+
+.wgrid .featured-event h3 + p {
+	padding-top: 15px;
+}
+
+/* checkeredboard custom */
+.wgrid h3, .wgrid h4 {
+	text-align: left;
+}
+.wgrid h3 {
+	padding-top: 0;
+}
+
+@media screen and (max-width:950px) {
+	.wgrid h3 {
+		padding-top: 40px;
+	}
+	.wgrid {
+		padding: 0;
+	    margin-top: 0;
+	}
+	.wgrid article {
+		padding: 0 2em;
+	}
+	.wgrid .event-image , .wgrid article { flex:0 1 100%; }
+	.wgrid .event-row { display:block; }
+	.wgrid .event-image { min-height:400px; }
+	.wgrid .event-spacer { display: none; }
+	.page-id-18294 .jarallax2 .jarallax-img {
+		object-position: 0!important;
+	}
+	.common-wrapper h2 {
+		padding: 0;
+	}
+}

@@ -1,0 +1,84 @@
+ #portfolio-items {
+	display: flex;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+ 	padding-bottom: 15px;
+ }
+ #portfolio-items .row {
+ 	margin: 0;
+ }
+ #portfolio-items .item {
+ 	/*float: left;*/
+ 	position: relative;
+ 	padding: 1.4em;
+ }
+  #portfolio-items .item .feat-image-container {
+  	height: 240px;
+  	display: block;
+  	position: relative;
+  }
+ @media all and (max-width: 992px) { 
+	#portfolio-items .item.c4 {
+		width: 50%;
+	}
+ }
+ @media all and (max-width: 768px) { 
+ 	.page-template-page-clients .content-area,
+ 	.page-template-page-portfolio-flex .content-area { overflow-x: hidden; }
+ 	#portfolio-items .item.c4 {
+		width: 100%;
+		padding: 0 0 0.1em;
+		margin-bottom: 1em;
+	} 
+ }
+ #portfolio-items .item {
+ 	overflow: hidden;
+ }
+ #portfolio-items .item img {
+ 	width: 100%;
+ }
+ #portfolio-items .item .overlay {
+ 	display: block;
+ 	position: absolute;
+ 	top: 0;
+ 	right: 0;
+ 	bottom: 0;
+ 	left: 0;
+ 	background: #333333;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	-moz-opacity: 0;
+	-khtml-opacity: 0;
+	opacity: 0;
+ }
+ #portfolio-items .item a:hover .overlay {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	-moz-opacity: 1.0;
+	-khtml-opacity: 1.0;
+	opacity: 1.0;
+ }
+ #portfolio-items .item h2 {
+	font-size: 1.4em;
+	letter-spacing: 0.15em;
+ 	line-height: 1.5em;
+ 	white-space: normal;
+ 	margin: 0;
+ }
+ #portfolio-items .item .location {
+ 	font-size: 1em;
+ 	font-weight: 300;
+ 	letter-spacing: 0.05em;
+ 	margin: 0;
+ }
+ #portfolio-items .item .inner {
+ 	min-width: 90%;
+ }
+ #portfolio-items .container-text {
+ 	position: relative;
+ }
+ #portfolio-items .container-text .container__cred {
+ 	
+ }

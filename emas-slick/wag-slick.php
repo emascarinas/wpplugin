@@ -1,8 +1,8 @@
 <?php
 /*
-Plugin Name: Wag Slick
+Plugin Name: Emas Slick
 Plugin URI: http://wordpress.org/
-Description: Wag plugins
+Description: Emas plugins
 Author: emas
 Version: 1.0
 Author URI: http://wordpress.org/
@@ -10,9 +10,9 @@ Author URI: http://wordpress.org/
 
 
 
-function wag_shortcodes_init()
+function emas_shortcodes_wslick()
 {
-	function wag_shortcode($atts = [], $content = null)
+	function emas_shortcode_wslick($atts = [], $content = null)
 	{
 		$atts = shortcode_atts( array( 'repeater' => 'slideRepeater' ), $atts );
 		ob_start();
@@ -21,25 +21,25 @@ function wag_shortcodes_init()
 		return $content;	
 	}
 
-	add_shortcode('wag-slick', 'wag_shortcode');
+	add_shortcode('emas-slick', 'emas_shortcode_wslick');
 }
 
-function my_load_scripts() {
+function load_scripts_wslick() {
 	// wp_register_script( 'jQuery', 'https://code.jquery.com/jquery-1.12.4.min.js', null, null, false );
 	// wp_enqueue_script('jQuery');
 	wp_register_script( 'Slick', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js', array('jquery'), false, true );
 	wp_enqueue_script('Slick');
-	wp_enqueue_style( 'style-name', plugins_url( 'main.css',    __FILE__ ) );
+	wp_enqueue_style( 'style-wslick', plugins_url( 'main.css',    __FILE__ ) );
 	wp_enqueue_style( 'slick-css', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css');
 
-	wp_enqueue_script( 'script-name', plugins_url( 'main.js', __FILE__ ), null, false, true);
+	wp_enqueue_script( 'script-wslick', plugins_url( 'main.js', __FILE__ ), null, false, true);
 
 
 
 }
 
-add_action('init', 'wag_shortcodes_init');
-add_action('wp_enqueue_scripts', 'my_load_scripts');
+add_action('init', 'emas_shortcodes_wslick');
+add_action('wp_enqueue_scripts', 'load_scripts_wslick');
 
 
 
